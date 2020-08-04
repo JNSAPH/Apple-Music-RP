@@ -9,8 +9,8 @@ app.use(cors());
 app.get('/:Title/:Artist', (req, res) => {
     // Discord RP Stuff goes here
     client.updatePresence({
-        state: req.params.Title,
-        details: req.params.Artist,
+        state: "by " + req.params.Artist,
+        details: req.params.Title,
         largeImageKey: 'logo',
         smallImageKey: 'play',
         instance: true,
@@ -19,8 +19,6 @@ app.get('/:Title/:Artist', (req, res) => {
   res.json({
       code: 200
   })
-
-  console.log("Changed Rich Presence to " + req.params.Title, req.params.Artist)
 })
 
 app.listen(port, () => {

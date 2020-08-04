@@ -9,9 +9,7 @@ function getSongDetails() {
 }
 
 function pingServer(Title, Artist) {
-    fetch(`http://localhost:6969/${Title}/${Artist}`) // This isn't working :(
-        .then(response => response.json())
-        .then(data => console.log(data));
+    fetch(`http://localhost:6969/${Title}/${Artist}`)
     /*
     let Status = false
     if (PlayStatus == "data-test-playback-control-pause") Status = true;
