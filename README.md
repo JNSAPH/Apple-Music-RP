@@ -1,7 +1,7 @@
 <p align="center">
       <img src="assets/logo.png" width="80">
   <h1 align="center">
-    Philips-Hue Controller
+    Apple Music RP
   </h1>
 </p>
 
