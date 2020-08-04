@@ -1,0 +1,22 @@
+{
+  "name": "applemusicrpserver",
+  "version": "1.0.0",
+  "description": "Lorem Ipsum",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "pack:osx": "electron-packager . $npm_package_productName --out=dist/osx --platform=darwin --arch=x64 --icon=../assets/build/osx/icon.icns && npm run codesign",
+    "pack:win64": "electron-packager . $npm_package_productName --out=dist/win --platform=win32 --arch=x64 app-version=1.0 --icon=../assets/build/win/icon.ico"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^9.1.2",
+    "electron-packager": "^15.0.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "cors": "^2.8.5",
+    "discord-rpc": "^3.1.3"
+  }
+}
