@@ -11,6 +11,8 @@ const port = 6969
 app.use(cors());
 
 app.get('/:Title/:Artist/:Status', (req, res) => {
+    if (req.params.Title == "undefined" && req.params.Artist == "undefined") return client.clearActivity()
+
     // Discord RP Stuff goes here
     client.setActivity({
         details: req.params.Title,

@@ -1,12 +1,12 @@
 {
   "name": "applemusicrpserver",
-  "version": "1.0.0",
-  "description": "Lorem Ipsum",
+  "version": "0.9.2",
+  "description": "Server Application for Browser Extension",
   "main": "app.js",
   "scripts": {
     "start": "electron .",
-    "pack:osx": "electron-packager . $npm_package_productName --out=dist/osx --platform=darwin --arch=x64 --icon=../assets/build/osx/icon.icns && npm run codesign",
-    "pack:win64": "electron-packager . $npm_package_productName --out=dist/win --platform=win32 --arch=x64 app-version=1.0 --icon=../assets/build/win/icon.ico"
+    "pack:osx": "electron-packager . 'Apple Music RP' --out=dist/osx --platform=darwin --arch=x64 --icon=../assets/build/osx/icon.icns && npm run codesign",
+    "pack:win64": "electron-packager . 'Apple Music RP' --out=dist/win --platform=win32 --arch=x64 app-version=1.0 --icon=../assets/build/win/icon.ico"
   },
   "author": "",
   "license": "ISC",
