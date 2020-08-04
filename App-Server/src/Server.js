@@ -15,8 +15,8 @@ app.get('/:Title/:Artist/:Status', (req, res) => {
 
     // Discord RP Stuff goes here
     client.setActivity({
-        details: req.params.Title,
-        state: "by " + req.params.Artist,
+        details: req.params.Title.substr(0, 50),
+        state: "by " + req.params.Artist.substr(0, 50),
         largeImageKey: 'logo',
         largeImageText: 'github.com/JNSAPH',
         smallImageKey: req.params.Status == "true" ? 'play' : 'pause',
