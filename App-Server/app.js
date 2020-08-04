@@ -3,7 +3,7 @@ require('./src/Server')
 
 app.whenReady()
 .then(() => {
-    tray = new Tray('../assets/logo.png')
+    let tray = new Tray('../assets/logo.png')
     const contextMenu = Menu.buildFromTemplate([
         { label: 'Apple Music RP' },
     ])
