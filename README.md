@@ -13,5 +13,6 @@ Show of the Music you're listening to on Discord using this Light-weight Applica
 * Lorem Ipsum
 
 # Todo
-* Switch modules from `discord-rich-presence` to `discord-rpc`
-* Google Chrome Version
+- [X] Switch modules from `discord-rich-presence` to `discord-rpc`
+- [X] Update Icons
+- Google Chrome Version
